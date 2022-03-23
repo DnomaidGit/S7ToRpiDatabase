@@ -23,7 +23,7 @@ Project to store data Plc using Mysql database.
 * Pc Windows 7.
 ***
 ## Architecture
-![Architecture](images/Arch.gif)
+![Architecture](images/arch.gif)
 ***
 ## Package
 
