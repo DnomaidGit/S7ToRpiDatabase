@@ -23,7 +23,7 @@ Project to store data Plc using Mysql database.
 * Pc Windows 7.
 ***
 ## Architecture
-![Architecture](images/arch.gif)
+![Architecture](Images/arch.gif)
 ***
 ## Package
 
@@ -37,7 +37,7 @@ Project to store data Plc using Mysql database.
 ## Tutorial
 Watch the video on youtube.
 
-[![Watch the video](https://img.youtube.com/vi/Ednnrd2W9P0/0.jpg)](https://www.youtube.com/watch?v=Ednnrd2W9P0)
+[![Watch the video](https://img.youtube.com/vi/paJqPzNHhUM/0.jpg)](https://www.youtube.com/watch?v=paJqPzNHhUM)
 ***
 
 
