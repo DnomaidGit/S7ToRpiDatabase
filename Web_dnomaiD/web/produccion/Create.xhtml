@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+
+        <p:dialog id="ProduccionCreateDlg" widgetVar="ProduccionCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.CreateProduccionTitle}">
+            <h:form id="ProduccionCreateForm">
+                <h:panelGroup id="display">
+                    <p:panelGrid columns="2" rendered="#{produccionController.selected != null}">
+                        <p:outputLabel value="#{bundle.CreateProduccionLabel_id}" for="id" />
+                        <p:inputText id="id" value="#{produccionController.selected.id}" title="#{bundle.CreateProduccionTitle_id}" required="true" requiredMessage="#{bundle.CreateProduccionRequiredMessage_id}"/>
+                        <p:outputLabel value="#{bundle.CreateProduccionLabel_fechaHora}" for="fechaHora" />
+                        <p:calendar id="fechaHora" pattern="MM/dd/yyyy HH:mm:ss" value="#{produccionController.selected.fechaHora}" title="#{bundle.EditProduccionTitle_fechaHora}" required="true" requiredMessage="#{bundle.EditProduccionRequiredMessage_fechaHora}" showOn="button"/>
+                        <p:outputLabel value="#{bundle.CreateProduccionLabel_puestoTrabajo}" for="puestoTrabajo" />
+                        <p:inputText id="puestoTrabajo" value="#{produccionController.selected.puestoTrabajo}" title="#{bundle.CreateProduccionTitle_puestoTrabajo}" />
+                        <p:outputLabel value="#{bundle.CreateProduccionLabel_chasis}" for="chasis" />
+                        <p:inputText id="chasis" value="#{produccionController.selected.chasis}" title="#{bundle.CreateProduccionTitle_chasis}" />
+                        <p:outputLabel value="#{bundle.CreateProduccionLabel_modelo}" for="modelo" />
+                        <p:inputText id="modelo" value="#{produccionController.selected.modelo}" title="#{bundle.CreateProduccionTitle_modelo}" />
+                        <p:outputLabel value="#{bundle.CreateProduccionLabel_estado}" for="estado" />
+                        <p:inputText id="estado" value="#{produccionController.selected.estado}" title="#{bundle.CreateProduccionTitle_estado}" />
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{produccionController.create}" value="#{bundle.Save}" update="display,:ProduccionListForm:datalist,:growl" oncomplete="handleSubmit(args,'ProduccionCreateDialog');"/>
+                    <p:commandButton value="#{bundle.Cancel}" onclick="ProduccionCreateDialog.hide()"/>
+                </h:panelGroup>
+            </h:form>
+        </p:dialog>
+
+    </ui:composition>
+</html>
