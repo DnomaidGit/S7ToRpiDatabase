@@ -12,15 +12,15 @@
 Project to store data Plc using Mysql database.
 ***
 ## Development Environment
-* Netbeans 8.1.
-* Step 7 5.5.
-* Wincc Flexible 2008 SP3.mysql workbench
+* Netbeans 8.1
+* Step 7 5.5
+* Wincc Flexible 2008 SP3
 * Mysql workbench
 ***
 ## Tested
-* Raspberry pi 2.
-* Plc S7 300.
-* Pc Windows 7.
+* Raspberry pi 2
+* Plc S7 300
+* Pc Windows 7
 ***
 ## Architecture
 ![Architecture](Images/arch.gif)
