@@ -38,6 +38,7 @@ Project to store data Plc using Mysql database.
 Watch the video on youtube.
 
 [![Watch the video](https://img.youtube.com/vi/paJqPzNHhUM/0.jpg)](https://www.youtube.com/watch?v=paJqPzNHhUM)
+* https://www.youtube.com/watch?v=paJqPzNHhUM
 ***
 
 
